@@ -43,7 +43,7 @@
   const COMMANDS = new Map([
     ['g', { name: 'Gmail', searchTemplate: '?q={}', url: 'https://mail.google.com/mail/u/0/#inbox' }],
     ['c', { name: 'Calendar', url: 'https://calendar.google.com/calendar/u/0/r/month' }],
-    ['l', { name: 'LeetCode', url: 'https://leetcode.com/'}],
+    ['l', { name: 'LeetCode', searchTemplate: '/problemset/?search={}&page=1',url: 'https://leetcode.com/'}],
     ['d', { name: 'Drive', url: 'https://drive.google.com/drive/u/0/my-drive' }],
     ['m', { name: 'Music', searchTemplate:'/search?q={}', url: 'https://music.youtube.com/' }],
     ['cf', { name: 'CodeForces', url: 'https://codeforces.com/'}],
@@ -54,8 +54,8 @@
     ['s', { name: 'Streamable', url: 'https://streamable.com/?signedup=true&signup_src=landing' }],
     ['n', { name: 'NotebookLM', url: 'https://notebooklm.google.com/' }],
     ['mg', { name: 'Manga', searchTemplate: '/search?text={}&sort=Best+Match&order=Ascending&official=Any&anime=Any&adult=Any&display_mode=Full+Display', url: 'https://weebcentral.com/' }],
-    ['r', { name: 'Crunchyroll', searchTemplate:'/search?q={}',  url: 'https://www.crunchyroll.com/' }],
-    ['k', { name: 'keep',searchTemplate:['https://keep.google.com/u/0/#search/text%25253D{}'], suggestions: ['00', '01','02','03','04'], url:'https://keep.google.com/u/0/#home'}],
+    ['mi', { name: 'Miruro', searchTemplate:'/search?query={}&sort=POPULARITY_DESC&type=ANIME',  url: 'https://www.miruro.tv/' }],
+    ['an', { name: 'Anilist',searchTemplate:['/search/anime?search={}'], url:'https://anilist.co/'}],
   ]);
 </script>
 
